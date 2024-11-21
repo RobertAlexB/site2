@@ -1,0 +1,82 @@
+/* Resetando alguns estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte e o background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 200px; /* Adicionando um padding para não encostar nas bordas da tela */
+}
+
+/* Estilizando o container principal */
+div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px; /* Aumentando o padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Adicionando um pouco mais de espaçamento entre as divs */
+    width: 400px; /* Aumentando a largura dos retângulos */
+    transition: transform 0.2s ease;
+}
+
+/* Efeito de hover nos containers */
+div:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para os textos dentro dos divs */
+div p, div h4 {
+    font-size: 1.2em; /* Aumentando o tamanho da fonte */
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Estilo para os títulos (Meus Contatos) */
+div h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Adicionando um separador entre os elementos */
+div:not(:last-child) {
+    border-bottom: 2px solid #46444494; /* Linha separadora entre os cartões */
+    padding-bottom: 20px; /* Distância entre o conteúdo e a linha */
+}
+
+/* Estilo para os links */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fixed-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3CB371;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 20px;
+    border: rgb(2, 49, 2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fixed-button:hover{
+    background-color: #11492a;
+    scale: 1.1;
+}

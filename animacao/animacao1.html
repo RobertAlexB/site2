@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacao 1</title>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="button" onclick="startanimation()">Iniciar Animacao</button>
+    <button class="button" onclick="stopAnimation()">Parar Animacao</button>
+    <button class="button" onclick="Arredondar()">Arrendondar quadrado</button>
+    <button class="button" onclick="quadrado()">quadrado</button>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+        .arrendodar{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            border-radius: 100px;
+        }
+        .button{
+            margin-top: 200px;
+            padding: 10px 20px;
+            background-color: #2ecc;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+              }
+        .button:hover{
+            background-color: rgb(41, 122, 109);
+        }
+
+        .animate{
+            animation: slide 3s ease infinite forwards;
+        }
+
+        @keyframes slide {
+            0% {left: 20px;}
+            50% {left: 300px;}
+            100% {left: 20px;}
+        }
+    </style>
+    <script>
+        function startanimation() {
+            const box = document.querySelector('.box')
+            box.classList.add('animate')
+        }
+        function stopAnimation() {
+            const box = document.querySelector('.box')
+            box.classList.remove('animate')
+        }
+        function Arredondar() {
+            const box = document.querySelector('.box')
+            box.classList.add('arrendodar')
+        }
+        function quadrado() {
+            const box = document.querySelector('.box')
+            box.classList.remove('arrendodar')
+        }
+
+
+    </script>
+</body>
+</html>

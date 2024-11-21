@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação 2</title>
+    <style>
+        /* Definindo o estilo básico da página */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Definindo o estilo do círculo */
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #3498db;
+            position: absolute;
+            animation: moveCircle 3s ease-in-out infinite;
+        }
+
+        /* Criando a animação */
+        @keyframes moveCircle {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(300px); /* Move para a direita */
+            }
+            100% {
+                transform: translateX(0); /* Volta para a posição inicial */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

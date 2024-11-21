@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #imageContainer {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Me Apresentando: </h1>
+    </header>
+    
+    <button class="fixed-button" id="whatsapp-button"> 
+    portifolio
+      </button>
+
+    <div>
+        <h1>Oq sou? </h1>
+        <p>Sou um ser humano, Meu nome e Robert Alex Batista de Arruda, 
+            tenho 14 anos e sou do RIO GRANDE DO SUL - RS melhor estado.
+        </p>
+        <h2>Meu E-mail esta abaixo</h2>
+        <p>O E-mail esta inativo no momento.</p>
+    </div>
+
+    <div>
+        <h2>Como criei esse site?</h2>
+        <p>Criei usando HTML, meu conhecimento em programação e mediano e o curso que estou fazendo e WEB FULL STACK PARA ADOLECENTES.</p>
+    </div>
+
+    <div>
+        <h2>Oq me define?</h2>
+        <ul>
+            <li>Auto confiança que tenho</li>
+            <li>Jogo Minecraft, CS, Roblox e Unturned</li>
+        </ul>
+        <button onclick="toggleImage()">Mostrar/Ocultar Imagem</button>
+        <div id="imageContainer">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXEzd3lhY3Q3dzlyc3cwaXA1dmlpbGFxOGFuaTJhYXlib2Y0NHFsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fCSxHT0lQJV1C/giphy.webp" alt="Os monstros estao a descançar" width="570">
+        </div>
+    </div>
+
+    <div>
+        <h2>Onde quero chegar?</h2>
+        <h3>
+            Quero chegar onde Deus quer que eu chegue por isso faço vários cursos para ver no que eu me interesso.
+        </h3>
+    </div>
+
+    <script>
+        function toggleImage() {
+            const imageContainer = document.getElementById('imageContainer');
+            if (imageContainer.style.display === 'none' || imageContainer.style.display === '') {
+                imageContainer.style.display = 'block';
+            } else {
+                imageContainer.style.display = 'none';
+            }
+        }
+
+        const whatsappButton = document.getElementById("whatsapp-button");
+        whatsappButton.addEventListener("click", function() {
+            window.location.href = "./portifolio/index.html";
+        });
+    </script>
+
+</body>
+</html>
